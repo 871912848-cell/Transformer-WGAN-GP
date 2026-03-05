@@ -1,0 +1,3 @@
+Transformer-WGAN-GP
+  Transformer-WGAN-GP is a paired data augmentation framework for small-sample spectroscopy. It adopts the WGAN-GP objective for stable adversarial training and implements both the generator and critic with Transformer encoders to capture long-range spectral dependencies. Instead of generating spectra alone, the model jointly synthesizes a spectrum and its corresponding target value, preserving feature–label consistency for downstream regression.
+In practice, synthetic samples are added only to the training split with configurable augmentation ratios. Data quality and distribution alignment can be monitored using MSE, SAM, MMD, SVD.
